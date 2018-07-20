@@ -1,6 +1,7 @@
 package ru.geekbrains.java1.makerov.nikolai.dz.dz2;
 
 
+import java.util.Arrays;
 
 public class Main2 {
 
@@ -10,6 +11,7 @@ public class Main2 {
         invertArray();
         fillArray();
         changeArray();
+        minMax ();
 
 
     }
@@ -64,6 +66,17 @@ public class Main2 {
             System.out.print(w[i] + " ");
         }
     }
+
+    /*5 ** Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета)*/
+
+       public  static void minMax (){
+           System.out.println();
+           int [] mm = {43,65,3,12,89,73,7,22,4,39};
+           Arrays.sort(mm);
+           int minValue = mm[0];
+           int maxValue = mm[9];
+           System.out.print(minValue + " " + maxValue);
+       }
 
 
     }
